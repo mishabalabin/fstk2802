@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #a6a6a6;
+    min-height: 25px;
+}
+
+ul li {
+    float: left;
+    margin-left: 25px;
+}
+ 
+#searchform {
+    float: right;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+ul li:first-child {
+    background-color: aqua;
+    font-weight: bold;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+main {
+    background-color: #efeded;
+}
+
+main p {
+    background-color: #a6a6a6;
+}
+
+footer {
+    min-height: 45px;
+    background-color: #a6a6a6;
+    text-align: center;
+}
