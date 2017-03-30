@@ -9,3 +9,5 @@ foreach ($arr as $value) {
     else
         echo "$value ";
 }
+
+

@@ -9,5 +9,8 @@ foreach ($arr as $key => $value) {
         $count++;
     }
 }
+echo $count + 1;
 
+//ИЛИ
+$count = count($arr);
 echo $count;

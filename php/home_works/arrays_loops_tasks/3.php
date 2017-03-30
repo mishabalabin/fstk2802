@@ -4,9 +4,8 @@
 $arr = [26, 17, 136, 12, 79, 15];
 
 foreach ($arr as $value) {
-    $value *= $value;
-    $result = $result + $value;
-    unset($value); // Надо ли?
+    $value = pow($value, 2);
+    $result = $value + $result;
 }
 echo $result;
 ?>

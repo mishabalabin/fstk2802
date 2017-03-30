@@ -5,8 +5,7 @@ $arr = range(1,31,1);
 
 foreach ($arr as $value) {
     if(date('j') == $value){
-        $day = $value;
-        echo "<i>$day </i>";
+        echo "<i>$value </i>";
     }
     else
     echo "$value ";
