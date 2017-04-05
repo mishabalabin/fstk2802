@@ -1,0 +1,44 @@
+section {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+}
+
+div {
+    border: 3px solid red;
+    margin: 10px;
+    text-align: center;
+}
+
+.onethird {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.onehalf {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.onefourth {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.OneSix {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 10px;
+}
+
+section:nth-of-type(5) .onehalf {
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: 175px;
+}
+
+section:nth-of-type(6) .twothirds {
+    flex-grow: 3;
+    flex-shrink: 3;
+}
+
