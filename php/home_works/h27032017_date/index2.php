@@ -4,7 +4,6 @@
  * @param int $timeInSec
  * @return array
  */
-
 function returnTime($timeInSec) {
     $returnInWords = [];
     $times = ['year' => 31536000,
@@ -21,45 +20,13 @@ function returnTime($timeInSec) {
         }
     }
     $returnInWords['second'] = $timeInSec;
-
-    foreach ($returnInWords as $per => $item) {
-        if($per == 'year') {
-            echo ' '.$item. ' ' .declinationOfWords($item, $per);
-        }
-
-        if($per == 'month') {
-            echo ' '.$item. ' ' .declinationOfWords($item, $per);
-        }
-
-        if($per == 'day') {
-            echo ' '.$item. ' ' .declinationOfWords($item, $per);
-        }
-
-        if($per == 'hour') {
-            echo ' '.$item. ' ' .declinationOfWords($item, $per);
-        }
-
-        if($per == 'minute') {
-            echo ' '.$item. ' ' .declinationOfWords($item, $per);
-        }
-
-        if($per == 'second') {
-            echo ' '.$item. ' ' .declinationOfWords($item, $per);
-        }
-
-    }
     return  $returnInWords;
 }
-
-
-
-
 /**
  * @param int $dateAsArray
  * @param string $flag
  * @return string
  */
-
 function declinationOfWords($dateAsArray, $flag) {
 
     $fromSecToYears = [
@@ -89,7 +56,32 @@ function declinationOfWords($dateAsArray, $flag) {
 
 
 if($_GET['timeinsec'] && count($_GET) >= 1) {
-    returnTime($_GET['timeinsec']);
+    foreach (returnTime($_GET['timeinsec']) as $per => $item) {
+
+        if($per == 'year') {
+            echo ' '.$item. ' ' .declinationOfWords($item, $per);
+        }
+
+        if($per == 'month') {
+            echo ' '.$item. ' ' .declinationOfWords($item, $per);
+        }
+
+        if($per == 'day') {
+            echo ' '.$item. ' ' .declinationOfWords($item, $per);
+        }
+
+        if($per == 'hour') {
+            echo ' '.$item. ' ' .declinationOfWords($item, $per);
+        }
+
+        if($per == 'minute') {
+            echo ' '.$item. ' ' .declinationOfWords($item, $per);
+        }
+
+        if($per == 'second') {
+            echo ' '.$item. ' ' .declinationOfWords($item, $per);
+        }
+    }
 }
 
 ?>
