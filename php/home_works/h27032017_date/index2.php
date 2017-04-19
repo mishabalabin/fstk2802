@@ -6,11 +6,13 @@
  */
 function returnTime($timeInSec) {
     $returnInWords = [];
-    $times = ['year' => 31536000,
+    $times = [
+        'year' => 31536000,
         'month' => 2592000,
         'day' => 86400,
         'hour' => 3600,
-        'minute' => 60];
+        'minute' => 60
+    ];
 
     foreach ($times as $key => $value) {
         $somePeriod = floor($timeInSec / $value);
